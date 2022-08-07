@@ -3,41 +3,47 @@
       app
       color="white"
       dark
+      prominent
     >
-      <div  class="d-flex align-center">
-        <v-img
-          alt="Kalyptio Logo"
-          class="mr-2"
-          max-height="50px"
-          max-width="200px"
-          contain
-          src='@/assets/kalyptioLogo.png'
-          transition="scale-transition"
-          @click="toHome()"
-        />
-      </div>
-    <v-chip outlined medium md-large label class=" text-body-1 text-md-h5 mr-2" color="indigo darken-1" @click="toHome()">Shop</v-chip>
-      <v-spacer></v-spacer>
-      <v-btn color="red"  small @click="deleteCart()" rounded > Delete Basket<v-icon medium color="white">mdi-cart-minus</v-icon></v-btn>
-     <v-badge
-        color="green"
-        :value="countCart"
-        :content="countCart"
-        v-if="countCart"
-        overlap
-      >
-      <v-btn color="warning"  class="ml-2"  small @click="toCart()"  rounded>Basket<v-icon medium color="white">mdi-cart-outline</v-icon></v-btn>
-      </v-badge>
-      <v-badge
-        color="green"
-        :value="count"
-        :content="count"
-        v-if="!countCart"
-        overlap
-      >
-      <v-btn color="warning"  class="ml-2"  small @click="toCart()" rounded>Basket<v-icon medium color="white">mdi-cart-outline</v-icon></v-btn>
-      </v-badge>
-      
+      <v-col>
+        <v-row class="d-flex align-center">
+            <div  class="d-flex align-center">
+              <v-img
+                alt="Kalyptio Logo"
+                class="mr-2"
+                max-height="50px"
+                max-width="200px"
+                contain
+                src='@/assets/kalyptioLogo.png'
+                transition="scale-transition"
+                @click="toHome()"
+              />
+            </div>
+            <v-chip outlined medium md-large label class=" text-body-1 text-md-h5 mr-2" color="indigo darken-1" @click="toHome()">Shop</v-chip>
+          <v-spacer></v-spacer>
+          <v-col class="d-flex justify-end">
+            <v-btn color="red"  medium  @click="deleteCart()" rounded >Delete Basket <v-icon medium color="white">mdi-cart-minus</v-icon></v-btn>
+            <v-badge
+                color="green"
+                :value="countCart"
+                :content="countCart"
+                v-if="countCart"
+                overlap
+              >
+              <v-btn color="warning"  class="ml-2"  small @click="toCart()"  fab>Basket<v-icon medium color="white">mdi-cart-outline</v-icon></v-btn>
+              </v-badge>
+              <v-badge
+                color="green"
+                :value="count"
+                :content="count"
+                v-if="!countCart"
+                overlap
+              >
+              <v-btn color="warning"  class="ml-2"  small @click="toCart()" fab><v-icon medium color="white">mdi-cart-outline</v-icon></v-btn>
+            </v-badge>
+          </v-col>
+        </v-row>  
+      </v-col>  
     </v-app-bar>
 </template>
 <script>
