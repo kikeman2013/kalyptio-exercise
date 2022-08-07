@@ -1,0 +1,77 @@
+{
+  "baskets": [
+    {
+      "basketId": "ad1d6ba4-3583-4f73-a526-8f59060521fb",
+      "items": [
+        {
+          "code": "PEN",
+          "count": 1
+        },
+        {
+          "code": "TSHIRT",
+          "count": 1
+        },
+        {
+          "code": "MUG",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "basketId": "6b539a97-ddb5-426d-9925-3c8c348283f2",
+      "items": [
+        {
+          "code": "PEN",
+          "count": 2
+        },
+        {
+          "code": "TSHIRT",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "basketId": "6b539a97-a526-426d-28f2-ad1d6a4283f2",
+      "items": [
+        {
+          "code": "TSHIRT",
+          "count": 4
+        },
+        {
+          "code": "PEN",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "basketId": "6b53c8c3-a526-3583-28f2-ad1dad1d6ba4",
+      "items": [
+        {
+          "code": "PEN",
+          "count": 3
+        },
+        {
+          "code": "TSHIRT",
+          "count": 3
+        },
+        {
+          "code": "MUG",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "basketId": "86e698e2-a832-48be-86bb-a49449886562",
+      "items": [
+        {
+          "code": "TSHIRT",
+          "count": 2
+        },
+        {
+          "code": "MUG",
+          "count": 2
+        }
+      ]
+    }
+  ]
+}
