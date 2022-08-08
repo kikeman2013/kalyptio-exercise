@@ -16,7 +16,7 @@ npm run build
 ```
 
 
-##### Para correr el proyecto
+### RUN Project
 ```
 node server.js 
 ```
